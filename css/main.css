@@ -9,7 +9,9 @@ body {
 nav {
   width: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #7C6A0A;
   padding: 15px;
 }
@@ -22,23 +24,26 @@ nav .icons {
   gap: 15px;
 }
 nav .icons button {
-  background: none;
+  background-color: none;
   border-style: none;
 }
 
 article {
   width: auto;
   color: #7C6A0A;
-  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 70px;
-  display: flex;
-  justify-content: space-between;
 }
 article .impact-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-star;
   padding-top: 50px;
   gap: 25px;
 }
@@ -51,13 +56,20 @@ article p {
   font-size: 1.5em;
 }
 article button {
+  background-color: none;
+  border-style: none;
+}
+article button {
   width: 12vw;
   padding: 20px;
-  background: #FA9500;
+  background-color: #FA9500;
   border-style: none;
   border-radius: 35px;
   color: white;
   font-size: 1em;
+}
+article button:hover {
+  transform: scale(1.1);
 }
 article img {
   width: 25vw;
@@ -85,12 +97,13 @@ section .healthcare h2, section .furniture h2 {
   padding-bottom: 60px;
 }
 section .healthcare .card-section, section .furniture .card-section {
-  display: flex;
   width: auto;
   height: auto;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   -moz-column-gap: 200px;
        column-gap: 200px;
   row-gap: 80px;
@@ -133,8 +146,84 @@ section .furniture .product-card {
   color: white;
 }
 
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
+  width: 30vw;
+  display: flex;
+  gap: 40px;
+  color: #E86424;
+}
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .mission-section P {
+  text-align: center;
+  font-size: 1.5em;
+}
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+
+.location {
+  color: #E86424;
+}
+.location h2 {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.location .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.location h3, .location p {
+  font-size: 1.5em;
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;
-  height: 250px;
+  height: auto;
+  padding: 40px;
+  color: white;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
